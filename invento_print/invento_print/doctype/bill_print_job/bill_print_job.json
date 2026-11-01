@@ -1,0 +1,30 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2026-11-01 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": ["invoice", "branch", "status", "printer", "requested_by"],
+ "fields": [
+  {"fieldname": "invoice", "fieldtype": "Link", "in_list_view": 1, "label": "Invoice", "options": "POS Invoice", "reqd": 1, "search_index": 1},
+  {"fieldname": "branch", "fieldtype": "Link", "label": "Branch", "options": "Branch", "reqd": 1},
+  {"default": "Pending", "fieldname": "status", "fieldtype": "Select", "in_list_view": 1, "label": "Status", "options": "Pending\nPrinted", "search_index": 1},
+  {"fieldname": "printer", "fieldtype": "Data", "in_list_view": 1, "label": "Printer"},
+  {"fieldname": "requested_by", "fieldtype": "Link", "label": "Requested By", "options": "User"}
+ ],
+ "in_create": 1,
+ "links": [],
+ "modified": "2026-11-01 00:00:00",
+ "modified_by": "Administrator",
+ "module": "Invento Print",
+ "name": "Bill Print Job",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {"read": 1, "report": 1, "role": "System Manager"},
+  {"read": 1, "report": 1, "role": "URY Manager"}
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

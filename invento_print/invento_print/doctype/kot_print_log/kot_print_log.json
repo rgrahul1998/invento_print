@@ -1,0 +1,28 @@
+{
+ "actions": [],
+ "autoname": "field:kot",
+ "creation": "2026-11-01 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": ["kot", "printer", "printed_by"],
+ "fields": [
+  {"fieldname": "kot", "fieldtype": "Link", "in_list_view": 1, "label": "KOT", "options": "URY KOT", "reqd": 1, "unique": 1},
+  {"fieldname": "printer", "fieldtype": "Data", "in_list_view": 1, "label": "Printer"},
+  {"fieldname": "printed_by", "fieldtype": "Link", "in_list_view": 1, "label": "Printed By", "options": "User"}
+ ],
+ "in_create": 1,
+ "links": [],
+ "modified": "2026-11-01 00:00:00",
+ "modified_by": "Administrator",
+ "module": "Invento Print",
+ "name": "KOT Print Log",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {"read": 1, "report": 1, "role": "System Manager"},
+  {"read": 1, "report": 1, "role": "URY Manager"}
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
