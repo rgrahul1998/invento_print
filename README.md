@@ -38,7 +38,7 @@ bench --site SITE set-config qz_private_key qz/private-key.pem
 ```
 
 ```bash
-bench --site SITE set-config qz_cert "$(cat sites/SITE/private/qz/digital-certificate.pem)"
+bench --site SITE set-config -- qz_cert "$(cat sites/SITE/private/qz/digital-certificate.pem)"
 ```
 
 Then send the POS's bills to the laptop page, using your POS Profile's name:
